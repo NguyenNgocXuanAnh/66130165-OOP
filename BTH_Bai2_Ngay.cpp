@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Ngay.h"
+#include "BTH_Bai2_Ngay.h"
 using namespace std;
 CDate::CDate(){
 	ngay = 5;

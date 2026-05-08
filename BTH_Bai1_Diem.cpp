@@ -1,5 +1,5 @@
 #include <iostream>
-#include "BTH1_Bai1_Diem.h"
+#include "BTH_Bai1_Diem.h"
 #include <math.h> 
 using namespace std;
 Diem::Diem () {
