@@ -13,15 +13,19 @@ int main () {
 		cout << "Nam nhuan"<<endl;
 	else  
 		cout <<"Nam khong nhuan"<<endl; 
-	//gan ngay ke tiep vo 1 CDate a 
-	cout << "Ngay ke tiep la: ";
-	CDate a = b.ngayKeTiep();
+//	//gan ngay ke tiep vo 1 CDate a 
+//	cout << "Ngay ke tiep la: ";
+//	CDate a = b.ngayKeTiep();
+//	a.Xuat();
+//	//gan ngay truoc do vo 1 CDate c 
+//	cout<<endl;
+//	cout << "Ngay truoc do la: ";
+//	CDate c = b.ngayTruocDo();
+//	c.Xuat();
+	CDate a = ++b; //b++ no se bao loi  
 	a.Xuat();
-	//gan ngay truoc do vo 1 CDate c 
 	cout<<endl;
-	cout << "Ngay truoc do la: ";
-	CDate c = b.ngayTruocDo();
+	CDate c = --b;
 	c.Xuat();
-
 	return 0;
 }
