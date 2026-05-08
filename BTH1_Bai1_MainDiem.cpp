@@ -1,4 +1,4 @@
-#include "Diem.cpp"
+#include "BTH1_Bai1_Diem.cpp"
 int main () {
 //	Diem a (3, 2);
 //	Diem b (5, 6);
