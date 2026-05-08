@@ -19,4 +19,15 @@ float Diem::khoangcach (const Diem &b) {
 	kq = sqrt((this -> x - b.x)*(this -> x - b.x)+(this -> y - b.y)*(this -> y - b.y));
 	return kq;
 }
+istream& operator>>(istream& in, Diem &obj) {
+	cout<<"Nhap toa do x: ";
+	in>>obj.x;
+	cout<<"Nhap toa do y: ";
+	in>>obj.y;
+	return in;
+}
 
+ostream& operator<<(ostream& out, const Diem &obj) {
+	out<<"("<<obj.x<<", "<<obj.y<<")"<<endl;
+	return out;
+}
