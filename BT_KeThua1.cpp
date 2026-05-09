@@ -9,6 +9,7 @@ class Nguoi {
 			cout<<"Nhap ho ten: ";
 			getline (cin,HoTen);
 			cout<<"Nhap nam sinh: ";
+			cin>>NamSinh;
 			cin.ignore();//xoa ki tu enter sau khi nhap ns
 		}
 		void Xuat (){
@@ -19,3 +20,20 @@ class Nguoi {
 			return 2026-NamSinh;
 		}
 };
+class SinhVien:public Nguoi{
+	string MSSV;
+	double Diem;
+	public:
+		void Nhap (){
+			cout<<"Nhap MSSV: ";
+			getline (cin,MSSV);
+			cout<<"Nhap diem: ";
+			cin>>Diem;
+			cin.ignore();
+		}
+		void Xuat (){
+			xuat();
+			cout<<"MSSV: "<<MSSV<<endl;
+			cout<<"Diem: "<<Diem<<endl;
+		}
+}; 
