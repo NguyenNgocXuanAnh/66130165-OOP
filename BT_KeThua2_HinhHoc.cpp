@@ -7,11 +7,11 @@ class HinhHoc {
 	public:
 		void Nhap (){
 			cout<<"Nhap mau sac: ";
-			getline(cin,color);
+			cin>>color;
 			cin.ignore();
 		}
 		void Xuat (){
-			cout<<"Mau sac: "<<color;
+			cout<<"Mau sac: "<<color<<endl;
 		}
 }; 
 class HCN:public HinhHoc {
@@ -51,3 +51,19 @@ class HV:public HCN {
 			cout<<"Dien tich: "<<tinhdt()<<endl;
 		}
 }; 
+int main (){
+	HinhHoc hh;
+	hh.Nhap();
+	hh.Xuat();
+	HCN hcn1;
+	hcn1.Nhap();
+	hcn1.Nhaphcn();
+	hcn1.tinhdt();
+	hcn1.Xuathcn();
+	HV hv1;
+	hv1.Nhap();
+	hv1.Nhaphv();
+	hv1.tinhdt();
+	hv1.Xuathv();
+	return 0;
+}
