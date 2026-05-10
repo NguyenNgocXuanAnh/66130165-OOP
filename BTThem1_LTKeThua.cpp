@@ -1,4 +1,4 @@
-#include <iostrem>
+#include <iostream>
 #include <string>
 using namespace std; 
 class Circle {
@@ -32,5 +32,22 @@ class Cylinder:public Circle{
 		double Volume (){
 			return Area()*height;
 		}
+		void XuatCylinder (){
+			Xuat();
+			cout<<"Chieu cao: "<<height<<endl;
+			cout<<"The tich: "<<Volume()<<endl;
+		}
 };
+int main (){
+//	Circle htron1;
+//	htron1.Nhap();
+//	htron1.Area();
+//	htron1.Xuat();
+	Cylinder htru1;
+	htru1.Nhap();
+	htru1.NhapCylinder();
+	htru1.Volume();
+	htru1.XuatCylinder();
+	return 0;
+}
 
