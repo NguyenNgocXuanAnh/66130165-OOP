@@ -11,6 +11,26 @@ class Circle {
 			cin>>radius;
 			cout<<"Nhap mau sac: ";
 			cin>>color;
-		}		
+		}	
+		double Area (){
+			return radius*radius*3.14;
+		}	
+		void Xuat (){
+			cout<<"Ban kinh: "<<radius<<endl;
+			cout<<"Mau sac: "<<color<<endl;
+			cout<<"Dien tich: "<<Area()<<endl;
+		}
 };
-class 
+class Cylinder:public Circle{
+	protected: 
+		double height;
+	public:
+		void NhapCylinder (){
+			cout<<"Nhap do cao: ";
+			cin>>height;
+		}
+		double Volume (){
+			return Area()*height;
+		}
+};
+
